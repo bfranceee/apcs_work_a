@@ -7,6 +7,6 @@ The 20 meter pacer test will begin in 30 seconds. Line up at the start.
 
 My favorite things:
 
--dogs
--food
--sleep
+- dogs
+- food
+- sleep
