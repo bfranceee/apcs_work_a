@@ -22,10 +22,14 @@ public class Functions {
         double b = 7.0;
         System.out.println("a+b: " + sum(a,b));
         
-        double c = sum(6.23,7.34);
+        double c = sum(6.23, 7.34);
         System.out.println("a+b: " + c);
         
         String result - twice("Hello, APCS!");
         System.out.println(result);
+        
+        System.out.println("isOdd(5): " + isOdd(5));
+        System.out.println("isOdd(7): " + isOdd(7));
+        System.out.println("isOdd(8): " + isOdd(8));
     }
 }
