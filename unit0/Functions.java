@@ -16,6 +16,6 @@ public class Functions {
         System.out.println("a+b: " + sum(a,b));
         
         double c = sum(6.23,7.34);
-        System.out.println("a+b: " + c)
+        System.out.println("a+b: " + c);
     }
 }
