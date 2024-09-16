@@ -4,8 +4,15 @@
 public class Functions {
     
     
-    public static void hello(){
-        System.out.println("Hello, world!");
+    public static double sum(double a, double b){
+        return a+b;
+    }
+    
+    public static boolean isOdd(int n){
+        if (n%2 == 1)
+            return true;
+        else
+            return false;
     }
     
     public static void main(String[] args){
@@ -17,5 +24,8 @@ public class Functions {
         
         double c = sum(6.23,7.34);
         System.out.println("a+b: " + c);
+        
+        String result - twice("Hello, APCS!");
+        System.out.println(result);
     }
 }
