@@ -17,7 +17,7 @@ public class GoodDeal {
         if (result == expected) {
             System.out.println("YAY!");
         }
-        else {}
+        else {
             System.out.println("Boohoo!");
     }
     }
