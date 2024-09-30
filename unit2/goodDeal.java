@@ -14,10 +14,12 @@ public class GoodDeal {
                 " Sale Price: " + salePrice + " expected: " + expected +
                 " result: " + result + " ");
 
-        if (result == expected) 
+        if (result == expected) {
             System.out.println("YAY!");
-        else
+        }
+        else {}
             System.out.println("Boohoo!");
+    }
     }
     public static void main(String[] args) {
         System.out.println("Hello, world!");
