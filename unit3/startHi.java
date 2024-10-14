@@ -12,15 +12,15 @@ public class startHi
         }
     }
 
-    public static void teststartHi(String str, String expected)
+    public static void teststartHi(String str, boolean expected)
     {
-        String result = startHi(str, expected);
+        boolean result = startHi(str, expected);
         
         System.out.print("startHi" + str +
                 "expected: " + expected +
                 " result: " + result + " ");
 
-        if (result.equals(expected)) {
+        if (result == expected)) {
             System.out.println("YAY!");
         }
         else {
