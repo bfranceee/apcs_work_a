@@ -1,37 +1,33 @@
-import processing.core.*;
-import java.util.*;   
+import processing.core.PApplet;
+import java.util.ArrayList;
 
+public class Bounce extends PApplet {
+    ArrayList<Ball> balls;
 
-public class Bounce extends PApplet
-{
-    public void settings()
-    {
-        size(400, 400);
-    }
-
-    public void setup()
-    {
-        balls = new ArrayList<Ball>();
-        balls.add(new Ball(this));
-    }
-
-    public void draw()
-    {
-        background(256,0,0);
-        for (Ball b : balls)
-            b.display();
-    }
-
-    public void keyPressed()
-    {
-        for (int i=0; i<10; i++)
-            balls.add(new Ball(this));        
-    }
-
-    private ArrayList<Ball> balls;
-
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         PApplet.main("Bounce");
+    }
+
+    public void settings() {
+        size(500, 500);
+    }
+
+    public void setup() {
+        balls = new ArrayList<>();
+        for (int i = 0; i < 40; i++) {
+            Ball b = new Ball(this);
+            balls.add(b);
+        }
+    }
+
+    public void draw() {
+        background(0);
+
+        for (Ball b : balls) {
+            b.update();
+            b.mouseCollision();
+            b.checkEdges();
+            b.display();
+        }
     }
 }
