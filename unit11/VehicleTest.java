@@ -1,10 +1,10 @@
-import java.util.List;
+import java.util.*;
 
 class VehicleTest {
     public static int totalWheels(List<Vehicle> vehicles) {
         int total = 0;
         for (Vehicle v : vehicles) {
-            total += v.wheelCount(); // Updated method call
+            total += v.wheelCount(); 
         }
         return total;
     }
