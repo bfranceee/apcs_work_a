@@ -1,9 +1,8 @@
 public class ArrayIntialization{
   public static void main (String [] args){
 
-
     int n = 10;
-    int[][] cells = new int[n][n];
+    int[][] a = new int[n][n];
 
     for (int i=0; i<n; i++)
     {
@@ -18,7 +17,7 @@ public class ArrayIntialization{
         }
     }
 
-    for (int[] row : cells)
+    for (int[] row : a)
     {
         for (int value : row)
         {
@@ -28,7 +27,7 @@ public class ArrayIntialization{
     }
 
     int h = 20;
-    String[][] cellos = new String[h][h];
+    String[][] b = new String[h][h];
 
     for (int i=0; i<h; i++)
     {
@@ -38,7 +37,7 @@ public class ArrayIntialization{
         }
     }
 
-    for (String[] row : cellos)
+    for (String[] row : b)
     {
         for (String value : row)
         {
@@ -47,7 +46,7 @@ public class ArrayIntialization{
         System.out.println();
     }
     int d = 5;
-    double[][] sllec = new double[d][d];
+    double[][] c = new double[d][d];
     double hi = 11.0;
 
     for (int i=0; i<d; i++)
@@ -59,7 +58,7 @@ public class ArrayIntialization{
       }
       hi+=5;
     }
-    for (double[] row : sllec)
+    for (double[] row : c)
     {
         for (double value : row)
         {
@@ -69,7 +68,7 @@ public class ArrayIntialization{
     }
 
     int y = 6;
-    int[][] sollec = new int[y][y];
+    int[][] d = new int[y][y];
 
     for (int i=0; i<y; i++)
     {
@@ -78,7 +77,7 @@ public class ArrayIntialization{
         sollec[i][j] = i+1;
       }
     }
-    for (int[] row : sollec)
+    for (int[] row : d)
     {
         for (int value : row)
         {
